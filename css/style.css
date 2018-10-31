@@ -1079,17 +1079,38 @@ td:not(:last-child):before {
     background: #f1c40f;
 }
 
+.functions_item_icons.yellow:hover {
+    -webkit-box-shadow: 0rem 0rem 5rem 0 #f9d423;
+            box-shadow: 0rem 0rem 5rem 0 #f9d423;
+}
+
 .functions_item_icons.blue {
     background: #0faff1;
+}
+
+.functions_item:hover .functions_item_icons.blue {
+    -webkit-box-shadow: 0rem 0rem 1rem 0 #0faff1;
+            box-shadow: 0rem 0rem 1rem 0 #0faff1;
 }
 
 .functions_item_icons.grey {
     background: #95a5a6;
 }
 
+.functions_item:hover .functions_item_icons.grey {
+    -webkit-box-shadow: 0rem 0rem 1rem 0 #95a5a6;
+            box-shadow: 0rem 0rem 1rem 0 #95a5a6;
+}
+
 .functions_item_icons.red {
     background: #f1540f;
 }
+
+.functions_item:hover .functions_item_icons.red {
+    -webkit-box-shadow: 0rem 0rem 1rem 0 #f1540f;
+            box-shadow: 0rem 0rem 1rem 0 #f1540f;
+}
+
 
 .functions_item_name {
     font-family: 'lato-heavy', Arial, sans-serif;
@@ -1254,9 +1275,6 @@ footer .nav_bar__menu {
         width: 1200px;
     } 
 }
-
-
-
 
 
 
