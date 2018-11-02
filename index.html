@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <title>Ghost Host</title>
-  <link rel="stylesheet" href="css/style.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <!-- font -->
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-  <!-- owl -->
-	<link rel="stylesheet" href="js/OwlCarousel/css/owl.carousel.min.css" />
 
 </head>
 
@@ -316,26 +314,34 @@
 	<div class="comment_bg">
 		<div class="container_block">
 			<div class="comment_bg_block">
-				<div id="carousel" class="owl-carousel owl-theme comment_block">
-			    	<div class="comment_block__item"> 
+				<div class="comment_block">
+			    	<div id="comment_0" class="comment_block__item active"> 
 			    		<p class="comment_block__text">
 			    			“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”
 			    		</p>
-						<p class="comment_block__name">John Doe</p>
 			    	</div>
-			    	<div class="comment_block__item"> 
+			    	<div id="comment_1" class="comment_block__item"> 
 			    		<p class="comment_block__text">
-			    			“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”
+			    			“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar ....”
 			    		</p>
-						<p class="comment_block__name">John Doe</p>
 			    	</div>
-			    	<div class="comment_block__item"> 
+			    	<div id="comment_2" class="comment_block__item"> 
 			    		<p class="comment_block__text">
-			    			“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”
+			    			“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor ...............”
 			    		</p>
-						<p class="comment_block__name">John Doe</p>
 			    	</div>
 				</div>
+				<div class="comment_block__names">
+					<span id="name_0" class="comment_block__name active">John Doe</span>
+					<span id="name_1" class="comment_block__name">Johnathan Doe</span>
+					<span id="name_2" class="comment_block__name">Jonny Doe</span>
+					<div class="comment_block_click">
+	    				<button id="block_click_0" class="comment_block_click_item active" onclick="slide_0()"></button>
+	    				<button id="block_click_1" class="comment_block_click_item" onclick="slide_1()"></button>
+	    				<button id="block_click_2" class="comment_block_click_item" onclick="slide_2()"></button>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -474,10 +480,6 @@
 	</div>
 </footer>
 	
-	<!-- jquery --> 
-	<script src="js/jquery/jquery-2.1.3.min.js"></script>
-	<!-- owl -->
-	<script src="js/OwlCarousel/js/owl.carousel.min.js"></script>
 	<!-- script -->
 	<script src="js/script.js"></script>
 
