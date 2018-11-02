@@ -1009,28 +1009,28 @@ td:not(:last-child):before {
     text-align: center;
     color: #ffffff;
     font-size: 20px;
-    padding-right: 70px;
+    padding-right: 10px;
 }
 
-.comment_block .owl-dots .owl-dot {
+.comment_block_click_item {
+display: inline-block;
     width: 8px;
     height: 8px;
     border: 1px solid #ffffff;
     border-radius: 50px;
     margin-left: 12px;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
 }
 
-.comment_block .owl-dots .owl-dot.active {
+.comment_block_click_item.active {
     background: #ffffff;
 }
 
-.comment_block .owl-dots {
+.comment_block_click {
     display: inline-block;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 50%;
-    bottom: 4px;
-    margin-left: 18px;
 }
 
 .comment_bg_block {
@@ -1038,6 +1038,22 @@ td:not(:last-child):before {
     margin: 0 auto;
 }
 
+.comment_block__names {
+    text-align: center;
+}
+
+.comment_block__name,
+.comment_block__item {
+    display: none;
+}
+
+.comment_block__name.active {
+    display: inline-block;
+}
+
+.comment_block__item.active {
+    display: block;
+}
 
 /*--------------------------------*/
 /*           9.functions
@@ -1079,9 +1095,9 @@ td:not(:last-child):before {
     background: #f1c40f;
 }
 
-.functions_item_icons.yellow:hover {
-    -webkit-box-shadow: 0rem 0rem 5rem 0 #f9d423;
-            box-shadow: 0rem 0rem 5rem 0 #f9d423;
+.functions_item:hover .functions_item_icons.yellow {
+    -webkit-box-shadow: 0rem 0rem 1rem 0 #f9d423;
+            box-shadow: 0rem 0rem 1rem 0 #f9d423;
 }
 
 .functions_item_icons.blue {
@@ -1275,6 +1291,8 @@ footer .nav_bar__menu {
         width: 1200px;
     } 
 }
+
+
 
 
 
